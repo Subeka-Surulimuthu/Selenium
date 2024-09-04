@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="BaseTestingClass.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validation(failed)" verbose="0">
+    <classes>
+      <class name="SeleniumTestingSubeka.ECommerceE2E.ErrorValidation">
+        <methods>
+          <include name="launchTheApp"/>
+          <include name="close"/>
+          <include name="ErrorValidationOnUserName"/>
+        </methods>
+      </class> <!-- SeleniumTestingSubeka.ECommerceE2E.ErrorValidation -->
+    </classes>
+  </test> <!-- Error Validation(failed) -->
+  <test thread-count="5" parallel="tests" name="E2E Testing(failed)" verbose="0">
+    <classes>
+      <class name="SeleniumTestingSubeka.ECommerceE2E.FirstTest">
+        <methods>
+          <include name="launchTheApp"/>
+          <include name="close"/>
+          <include name="ECommerceTesting" invocation-numbers="1"/>
+          <include name="orderCheckListValidation"/>
+        </methods>
+      </class> <!-- SeleniumTestingSubeka.ECommerceE2E.FirstTest -->
+    </classes>
+  </test> <!-- E2E Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: SeleniumTestingSubeka.ECommerceE2E.FirstTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.689 s - in SeleniumTestingSubeka.ECommerceE2E.FirstTest

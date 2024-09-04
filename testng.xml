@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+<listeners>
+<listener class-name="BaseTestingClass.Listeners"/>
+
+</listeners>
+
+  <test thread-count="5" name="E2E Testing">
+    <classes>
+      <class name="SeleniumTestingSubeka.ECommerceE2E.FirstTest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  <test name="Error Validation" thread-count="2">
+  	<classes>
+ 		 <class name="SeleniumTestingSubeka.ECommerceE2E.ErrorValidation" />
+  	</classes>
+  </test>
+  
+</suite> <!-- Suite -->
