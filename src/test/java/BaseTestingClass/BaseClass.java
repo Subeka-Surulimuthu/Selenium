@@ -28,6 +28,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	public WebDriver driver;
 	public LoginPage landing;
+	
+	public void test() {
+		System.out.println("jenkins testing");
+	}
 	public WebDriver InitiateTheBrowser() throws IOException {
 		
 		
